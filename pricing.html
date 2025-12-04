@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - Autoflow</title>
+    <meta name="description" content="Simple, transparent pricing for Autoflow. Start free, scale as you grow.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="aurora-bg">
+        <div class="aurora-blob b1"></div>
+        <div class="aurora-blob b2"></div>
+        <div class="aurora-blob b3"></div>
+    </div>
+    <canvas id="flow-canvas"></canvas>
+
+    <nav class="navbar glass">
+        <div class="logo">
+            <div class="logo-icon">
+                <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" fill="url(#lg)" />
+                    <defs>
+                        <linearGradient id="lg" x1="3" y1="2" x2="21" y2="22">
+                            <stop stop-color="#3b82f6" />
+                            <stop offset="1" stop-color="#8b5cf6" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <span>Autoflow</span>
+        </div>
+        <div class="nav-links">
+            <a href="products.html">Products</a>
+            <a href="solutions.html">Solutions</a>
+            <a href="pricing.html" class="active">Pricing</a>
+            <a href="agencies.html">Agencies</a>
+        </div>
+        <div class="nav-cta">
+            <a href="pricing-ar.html" class="lang-switch">عربي</a>
+            <a href="contact.html" class="btn-primary glow">Get Started</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-hero center-text">
+            <div class="container">
+                <div class="badge">Pricing</div>
+                <h1>Simple Plans, <span class="gradient-text">Big Results</span></h1>
+                <p class="lead">Choose the plan that fits your growth. No hidden fees, cancel anytime.</p>
+            </div>
+        </section>
+
+        <section class="pricing-section">
+            <div class="container">
+                <div class="pricing-grid">
+                    <div class="pricing-card glass">
+                        <div class="pricing-name">Starter</div>
+                        <div class="pricing-price">$49<span>/month</span></div>
+                        <div class="pricing-desc">Perfect for small businesses getting started</div>
+                        <ul class="pricing-features">
+                            <li>1 WhatsApp number</li>
+                            <li>500 AI conversations/month</li>
+                            <li>Basic CRM features</li>
+                            <li>Email support</li>
+                            <li>1 team member</li>
+                        </ul>
+                        <a href="contact.html" class="btn-secondary" style="width: 100%; justify-content: center;">Get
+                            Started</a>
+                    </div>
+
+                    <div class="pricing-card glass featured">
+                        <div class="pricing-badge">Most Popular</div>
+                        <div class="pricing-name">Growth</div>
+                        <div class="pricing-price">$149<span>/month</span></div>
+                        <div class="pricing-desc">For growing businesses that need more power</div>
+                        <ul class="pricing-features">
+                            <li>3 channels (WhatsApp, IG, Messenger)</li>
+                            <li>Unlimited AI conversations</li>
+                            <li>Full CRM & lead scoring</li>
+                            <li>Priority support</li>
+                            <li>5 team members</li>
+                            <li>POS integration</li>
+                        </ul>
+                        <a href="contact.html" class="btn-primary glow"
+                            style="width: 100%; justify-content: center;">Start Free Trial</a>
+                    </div>
+
+                    <div class="pricing-card glass">
+                        <div class="pricing-name">Enterprise</div>
+                        <div class="pricing-price">Custom</div>
+                        <div class="pricing-desc">For large teams with custom needs</div>
+                        <ul class="pricing-features">
+                            <li>Unlimited channels</li>
+                            <li>Unlimited conversations</li>
+                            <li>Custom AI training</li>
+                            <li>Dedicated account manager</li>
+                            <li>Unlimited team members</li>
+                            <li>White-label option</li>
+                            <li>SLA guarantee</li>
+                        </ul>
+                        <a href="contact.html" class="btn-secondary"
+                            style="width: 100%; justify-content: center;">Contact Sales</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-box glass">
+                    <h2>Not Sure Which Plan?</h2>
+                    <p>Start with a free 14-day trial. No credit card required.</p>
+                    <a href="contact.html" class="btn-primary glow">Start Free Trial →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer glass">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" fill="url(#lg2)" />
+                                <defs>
+                                    <linearGradient id="lg2" x1="3" y1="2" x2="21" y2="22">
+                                        <stop stop-color="#3b82f6" />
+                                        <stop offset="1" stop-color="#8b5cf6" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <span>Autoflow</span>
+                    </div>
+                    <p>AI-powered sales agents for the modern business.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <a href="automation.html">AI Automation</a>
+                    <a href="unified-inbox.html">Unified Inbox</a>
+                    <a href="insights.html">Smart Insights</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <a href="solutions.html">Solutions</a>
+                    <a href="agencies.html">For Agencies</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <a href="mailto:hello@autoflow.ai">hello@autoflow.ai</a>
+                    <a href="#">Amman, Jordan 🇯🇴</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Autoflow. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <style>
+        .pricing-section {
+            padding: 40px 0 80px;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            align-items: start;
+        }
+
+        .pricing-card {
+            padding: 40px;
+            text-align: center;
+            position: relative;
+        }
+
+        .pricing-card.featured {
+            border: 2px solid var(--primary);
+            transform: scale(1.05);
+        }
+
+        .pricing-badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .pricing-name {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .pricing-price {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 8px;
+        }
+
+        .pricing-price span {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        .pricing-desc {
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+        }
+
+        .pricing-features {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 24px;
+            text-align: left;
+        }
+
+        .pricing-features li {
+            padding: 8px 0;
+            border-bottom: 1px solid var(--glass-border);
+            position: relative;
+            padding-left: 24px;
+        }
+
+        .pricing-features li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        @media (max-width: 900px) {
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .pricing-card.featured {
+                transform: none;
+            }
+        }
+    </style>
+</body>
+
+</html>

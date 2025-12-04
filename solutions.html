@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solutions - Autoflow</title>
+    <meta name="description" content="AI sales automation solutions for retail, restaurants, and service businesses.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="aurora-bg">
+        <div class="aurora-blob b1"></div>
+        <div class="aurora-blob b2"></div>
+        <div class="aurora-blob b3"></div>
+    </div>
+    <canvas id="flow-canvas"></canvas>
+
+    <nav class="navbar glass">
+        <div class="logo">
+            <div class="logo-icon">
+                <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" fill="url(#lg)" />
+                    <defs>
+                        <linearGradient id="lg" x1="3" y1="2" x2="21" y2="22">
+                            <stop stop-color="#3b82f6" />
+                            <stop offset="1" stop-color="#8b5cf6" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <span>Autoflow</span>
+        </div>
+        <div class="nav-links">
+            <a href="products.html">Products</a>
+            <a href="solutions.html" class="active">Solutions</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="agencies.html">Agencies</a>
+        </div>
+        <div class="nav-cta">
+            <a href="solutions-ar.html" class="lang-switch">عربي</a>
+            <a href="contact.html" class="btn-primary glow">Get Started</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-hero center-text">
+            <div class="container">
+                <div class="badge">Solutions</div>
+                <h1>Built for Every <span class="gradient-text">Business Type</span></h1>
+                <p class="lead">Whether you're a fashion store, busy café, or beauty salon — Autoflow adapts to how you
+                    work.</p>
+            </div>
+        </section>
+
+        <section class="solutions-grid">
+            <div class="container">
+                <div class="grid-3">
+                    <div class="solution-card glass">
+                        <div class="icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="url(#s1)" stroke-width="2">
+                                <path
+                                    d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6Z" />
+                                <path d="M3 6H21" />
+                                <path
+                                    d="M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10" />
+                                <defs>
+                                    <linearGradient id="s1" x1="3" y1="2" x2="21" y2="22">
+                                        <stop stop-color="#3b82f6" />
+                                        <stop offset="1" stop-color="#8b5cf6" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3>E-commerce & Retail</h3>
+                        <p>Answer product questions, check sizes, and process orders — all automatically via WhatsApp
+                            and Instagram.</p>
+                        <ul class="check-list">
+                            <li>Real-time inventory sync</li>
+                            <li>Size & color recommendations</li>
+                            <li>Order status updates</li>
+                            <li>Payment link generation</li>
+                        </ul>
+                    </div>
+
+                    <div class="solution-card glass">
+                        <div class="icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="url(#s2)" stroke-width="2">
+                                <path
+                                    d="M18 8H19C20.0609 8 21.0783 8.42143 21.8284 9.17157C22.5786 9.92172 23 10.9391 23 12C23 13.0609 22.5786 14.0783 21.8284 14.8284C21.0783 15.5786 20.0609 16 19 16H18" />
+                                <path
+                                    d="M2 8H18V17C18 18.0609 17.5786 19.0783 16.8284 19.8284C16.0783 20.5786 15.0609 21 14 21H6C4.93913 21 3.92172 20.5786 3.17157 19.8284C2.42143 19.0783 2 18.0609 2 17V8Z" />
+                                <path d="M6 1V4" />
+                                <path d="M10 1V4" />
+                                <path d="M14 1V4" />
+                                <defs>
+                                    <linearGradient id="s2" x1="2" y1="1" x2="23" y2="21">
+                                        <stop stop-color="#8b5cf6" />
+                                        <stop offset="1" stop-color="#06b6d4" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3>Restaurants & Cafés</h3>
+                        <p>Take reservations, food orders, and delivery inquiries via Instagram and Messenger messages.
+                        </p>
+                        <ul class="check-list">
+                            <li>In-chat menu browsing</li>
+                            <li>Table reservations</li>
+                            <li>Delivery order processing</li>
+                            <li>Special requests handling</li>
+                        </ul>
+                    </div>
+
+                    <div class="solution-card glass">
+                        <div class="icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="url(#s3)" stroke-width="2">
+                                <path
+                                    d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path
+                                    d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13" />
+                                <path
+                                    d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.7122 8.75608 18.1676 9.45768C17.623 10.1593 16.8604 10.6597 16 10.88" />
+                                <defs>
+                                    <linearGradient id="s3" x1="1" y1="3" x2="23" y2="21">
+                                        <stop stop-color="#06b6d4" />
+                                        <stop offset="1" stop-color="#3b82f6" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3>Services & Clinics</h3>
+                        <p>Salons, clinics, gyms — automate appointment booking and FAQ responses without extra staff.
+                        </p>
+                        <ul class="check-list">
+                            <li>Smart scheduling</li>
+                            <li>Service price inquiries</li>
+                            <li>Availability checking</li>
+                            <li>Appointment reminders</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-box glass">
+                    <h2>Don't See Your Industry?</h2>
+                    <p>Autoflow is fully customizable. Tell us about your business and we'll build the perfect agent for
+                        you.</p>
+                    <a href="contact.html" class="btn-primary glow">Talk to Us →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer glass">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" fill="url(#lg2)" />
+                                <defs>
+                                    <linearGradient id="lg2" x1="3" y1="2" x2="21" y2="22">
+                                        <stop stop-color="#3b82f6" />
+                                        <stop offset="1" stop-color="#8b5cf6" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <span>Autoflow</span>
+                    </div>
+                    <p>AI-powered sales agents for the modern business.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <a href="automation.html">AI Automation</a>
+                    <a href="unified-inbox.html">Unified Inbox</a>
+                    <a href="insights.html">Smart Insights</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <a href="solutions.html">Solutions</a>
+                    <a href="agencies.html">For Agencies</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <a href="mailto:hello@autoflow.ai">hello@autoflow.ai</a>
+                    <a href="#">Amman, Jordan 🇯🇴</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Autoflow. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <style>
+        .solution-card {
+            padding: 40px;
+        }
+
+        .solution-card h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 16px 0 12px;
+        }
+
+        .solution-card>p {
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+        }
+
+        .solutions-grid {
+            padding: 40px 0 80px;
+        }
+    </style>
+</body>
+
+</html>

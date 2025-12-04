@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Autoflow</title>
+    <meta name="description"
+        content="Explore Autoflow's AI-powered products: Automation, Unified Inbox, and Smart Insights.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="aurora-bg">
+        <div class="aurora-blob b1"></div>
+        <div class="aurora-blob b2"></div>
+        <div class="aurora-blob b3"></div>
+    </div>
+    <canvas id="flow-canvas"></canvas>
+
+    <nav class="navbar glass">
+        <div class="logo">
+            <div class="logo-icon">
+                <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" fill="url(#lg)" />
+                    <defs>
+                        <linearGradient id="lg" x1="3" y1="2" x2="21" y2="22">
+                            <stop stop-color="#3b82f6" />
+                            <stop offset="1" stop-color="#8b5cf6" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <span>Autoflow</span>
+        </div>
+        <div class="nav-links">
+            <a href="products.html" class="active">Products</a>
+            <a href="solutions.html">Solutions</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="agencies.html">Agencies</a>
+        </div>
+        <div class="nav-cta">
+            <a href="products-ar.html" class="lang-switch">عربي</a>
+            <a href="contact.html" class="btn-primary glow">Get Started</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-hero center-text">
+            <div class="container">
+                <div class="badge">Products</div>
+                <h1>Powerful Tools for <span class="gradient-text">Modern Sales</span></h1>
+                <p class="lead">Everything you need to automate customer conversations and grow your business.</p>
+            </div>
+        </section>
+
+        <section class="products-grid">
+            <div class="container">
+                <div class="product-card glass">
+                    <div class="product-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="url(#p1)" stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <polyline points="12,6 12,12 16,14" />
+                            <defs>
+                                <linearGradient id="p1" x1="2" y1="2" x2="22" y2="22">
+                                    <stop stop-color="#3b82f6" />
+                                    <stop offset="1" stop-color="#8b5cf6" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h2>AI Automation</h2>
+                    <p>Sales agents that work 24/7. They answer questions, recommend products, and close deals
+                        automatically.</p>
+                    <ul class="check-list">
+                        <li>Natural language understanding</li>
+                        <li>Product recommendations</li>
+                        <li>Order processing</li>
+                        <li>Custom personality</li>
+                    </ul>
+                    <a href="automation.html" class="btn-primary">Learn More →</a>
+                </div>
+
+                <div class="product-card glass">
+                    <div class="product-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="url(#p2)" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                            <line x1="8" y1="21" x2="16" y2="21" />
+                            <line x1="12" y1="17" x2="12" y2="21" />
+                            <defs>
+                                <linearGradient id="p2" x1="2" y1="3" x2="22" y2="21">
+                                    <stop stop-color="#8b5cf6" />
+                                    <stop offset="1" stop-color="#06b6d4" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h2>Unified Inbox</h2>
+                    <p>All your WhatsApp, Instagram, and Messenger conversations in one beautiful dashboard.</p>
+                    <ul class="check-list">
+                        <li>Multi-channel support</li>
+                        <li>Team collaboration</li>
+                        <li>Tags & labels</li>
+                        <li>Smart notifications</li>
+                    </ul>
+                    <a href="unified-inbox.html" class="btn-primary">Learn More →</a>
+                </div>
+
+                <div class="product-card glass">
+                    <div class="product-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="url(#p3)" stroke-width="2">
+                            <line x1="12" y1="20" x2="12" y2="10" />
+                            <line x1="18" y1="20" x2="18" y2="4" />
+                            <line x1="6" y1="20" x2="6" y2="16" />
+                            <defs>
+                                <linearGradient id="p3" x1="6" y1="4" x2="18" y2="20">
+                                    <stop stop-color="#06b6d4" />
+                                    <stop offset="1" stop-color="#3b82f6" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h2>Smart Insights</h2>
+                    <p>Auto-built customer profiles, lead scoring, and real-time analytics to grow your business.</p>
+                    <ul class="check-list">
+                        <li>Auto CRM</li>
+                        <li>Lead scoring</li>
+                        <li>Conversation analytics</li>
+                        <li>Revenue tracking</li>
+                    </ul>
+                    <a href="insights.html" class="btn-primary">Learn More →</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-box glass">
+                    <h2>Ready to Get Started?</h2>
+                    <p>Try Autoflow free for 14 days. No credit card required.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn-primary btn-lg glow">Start Free Trial</a>
+                        <a href="pricing.html" class="btn-secondary btn-lg">View Pricing</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer glass">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" fill="url(#lg2)" />
+                                <defs>
+                                    <linearGradient id="lg2" x1="3" y1="2" x2="21" y2="22">
+                                        <stop stop-color="#3b82f6" />
+                                        <stop offset="1" stop-color="#8b5cf6" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <span>Autoflow</span>
+                    </div>
+                    <p>AI-powered sales agents for the modern business.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <a href="automation.html">AI Automation</a>
+                    <a href="unified-inbox.html">Unified Inbox</a>
+                    <a href="insights.html">Smart Insights</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <a href="solutions.html">Solutions</a>
+                    <a href="agencies.html">For Agencies</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <a href="mailto:hello@autoflow.ai">hello@autoflow.ai</a>
+                    <a href="#">Amman, Jordan 🇯🇴</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Autoflow. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <style>
+        .products-grid {
+            padding: 40px 0 80px;
+        }
+
+        .products-grid .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+
+        .product-card {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .product-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 24px;
+        }
+
+        .product-icon svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .product-card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+        }
+
+        .product-card>p {
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+        }
+
+        .product-card .check-list {
+            text-align: left;
+            margin-bottom: 24px;
+        }
+
+        @media (max-width: 900px) {
+            .products-grid .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+
+</html>

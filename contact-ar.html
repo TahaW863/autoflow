@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا - أوتوفلو</title>
+    <meta name="description" content="تواصل مع أوتوفلو. ابدأ تجربة مجانية أو احجز عرض توضيحي.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="aurora-bg">
+        <div class="aurora-blob b1"></div>
+        <div class="aurora-blob b2"></div>
+        <div class="aurora-blob b3"></div>
+    </div>
+    <canvas id="flow-canvas"></canvas>
+
+    <nav class="navbar glass">
+        <div class="logo">
+            <div class="logo-icon">
+                <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" fill="url(#lg)" />
+                    <defs>
+                        <linearGradient id="lg" x1="3" y1="2" x2="21" y2="22">
+                            <stop stop-color="#3b82f6" />
+                            <stop offset="1" stop-color="#8b5cf6" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <span>أوتوفلو</span>
+        </div>
+        <div class="nav-links">
+            <a href="products-ar.html">المنتجات</a>
+            <a href="solutions-ar.html">الحلول</a>
+            <a href="pricing-ar.html">الأسعار</a>
+            <a href="agencies-ar.html">للوكالات</a>
+        </div>
+        <div class="nav-cta">
+            <a href="contact.html" class="lang-switch">English</a>
+            <a href="contact-ar.html" class="btn-primary glow">ابدأ الآن</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-hero center-text">
+            <div class="container">
+                <div class="badge">ابدأ الآن</div>
+                <h1>خلينا <span class="gradient-text">نحكي</span></h1>
+                <p class="lead">ابدأ تجربتك المجانية أو احجز عرض توضيحي. يسعدنا سماعك.</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-form glass">
+                        <form>
+                            <div class="form-group">
+                                <label for="name">الاسم *</label>
+                                <input type="text" id="name" name="name" placeholder="أحمد محمد" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">البريد الإلكتروني *</label>
+                                <input type="email" id="email" name="email" placeholder="ahmad@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">الهاتف</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+962 7XX XXX XXX">
+                            </div>
+                            <div class="form-group">
+                                <label for="business">نوع العمل</label>
+                                <select id="business" name="business">
+                                    <option value="">اختر...</option>
+                                    <option value="retail">تجزئة / تجارة إلكترونية</option>
+                                    <option value="restaurant">مطعم / كافيه</option>
+                                    <option value="services">خدمات / عيادة</option>
+                                    <option value="agency">وكالة</option>
+                                    <option value="other">غير ذلك</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">الرسالة</label>
+                                <textarea id="message" name="message" rows="4"
+                                    placeholder="احكيلنا عن شغلك..."></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary glow" style="width: 100%;">أرسل الرسالة ←</button>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <div class="info-card glass">
+                            <div class="info-icon">📧</div>
+                            <h3>البريد الإلكتروني</h3>
+                            <p>hello@autoflow.ai</p>
+                        </div>
+                        <div class="info-card glass">
+                            <div class="info-icon">📍</div>
+                            <h3>الموقع</h3>
+                            <p>عمّان، الأردن 🇯🇴</p>
+                        </div>
+                        <div class="info-card glass">
+                            <div class="info-icon">💬</div>
+                            <h3>واتساب</h3>
+                            <p>+962 7XX XXX XXX</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer glass">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" fill="url(#lg2)" />
+                                <defs>
+                                    <linearGradient id="lg2" x1="3" y1="2" x2="21" y2="22">
+                                        <stop stop-color="#3b82f6" />
+                                        <stop offset="1" stop-color="#8b5cf6" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <span>أوتوفلو</span>
+                    </div>
+                    <p>وكلاء مبيعات بالذكاء الاصطناعي للأعمال الحديثة.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>المنتج</h4>
+                    <a href="automation-ar.html">الأتمتة الذكية</a>
+                    <a href="unified-inbox-ar.html">صندوق الوارد</a>
+                    <a href="insights-ar.html">التحليلات</a>
+                </div>
+                <div class="footer-links">
+                    <h4>الشركة</h4>
+                    <a href="solutions-ar.html">الحلول</a>
+                    <a href="agencies-ar.html">للوكالات</a>
+                    <a href="contact-ar.html">تواصل معنا</a>
+                </div>
+                <div class="footer-links">
+                    <h4>تواصل</h4>
+                    <a href="mailto:hello@autoflow.ai">hello@autoflow.ai</a>
+                    <a href="#">عمّان، الأردن 🇯🇴</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 أوتوفلو. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <style>
+        .contact-section {
+            padding: 40px 0 80px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 40px;
+        }
+
+        .contact-form {
+            padding: 40px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 16px;
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-family: inherit;
+            font-size: 1rem;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .info-card {
+            padding: 24px;
+            text-align: center;
+        }
+
+        .info-icon {
+            font-size: 2rem;
+            margin-bottom: 12px;
+        }
+
+        .info-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+
+        .info-card p {
+            color: var(--text-secondary);
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+
+</html>

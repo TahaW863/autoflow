@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأتمتة الذكية - أوتوفلو</title>
+    <meta name="description"
+        content="وكلاء مبيعات يعملون 24/7. يجاوبون الأسئلة، يوصون بالمنتجات، ويغلقون الصفقات تلقائياً.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="aurora-bg">
+        <div class="aurora-blob b1"></div>
+        <div class="aurora-blob b2"></div>
+        <div class="aurora-blob b3"></div>
+    </div>
+    <canvas id="flow-canvas"></canvas>
+
+    <nav class="navbar glass">
+        <div class="logo">
+            <div class="logo-icon">
+                <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" fill="url(#lg)" />
+                    <defs>
+                        <linearGradient id="lg" x1="3" y1="2" x2="21" y2="22">
+                            <stop stop-color="#3b82f6" />
+                            <stop offset="1" stop-color="#8b5cf6" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <span>أوتوفلو</span>
+        </div>
+        <div class="nav-links">
+            <a href="products-ar.html" class="active">المنتجات</a>
+            <a href="solutions-ar.html">الحلول</a>
+            <a href="pricing-ar.html">الأسعار</a>
+            <a href="agencies-ar.html">للوكالات</a>
+        </div>
+        <div class="nav-cta">
+            <a href="automation.html" class="lang-switch">English</a>
+            <a href="contact-ar.html" class="btn-primary glow">ابدأ الآن</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-hero center-text">
+            <div class="container">
+                <div class="badge">الأتمتة الذكية</div>
+                <h1>فريق مبيعاتك اللي <span class="gradient-text">ما بينام</span></h1>
+                <p class="lead">وكلاء AI يعرفون منتجاتك، يحكون بلغة عملائك، ويغلقون صفقات 24/7.</p>
+            </div>
+        </section>
+
+        <section class="benefits-grid">
+            <div class="container">
+                <div class="grid-3">
+                    <div class="benefit-card glass">
+                        <div class="icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="url(#b1)" stroke-width="2">
+                                <circle cx="12" cy="12" r="10" />
+                                <polyline points="12,6 12,12 16,14" />
+                                <defs>
+                                    <linearGradient id="b1" x1="2" y1="2" x2="22" y2="22">
+                                        <stop stop-color="#3b82f6" />
+                                        <stop offset="1" stop-color="#8b5cf6" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3>متوفر 24/7</h3>
+                        <p>لا تفوّت أي فرصة بيع. وكيلك الذكي يرد فوراً، حتى الساعة 3 الفجر يوم الجمعة.</p>
+                    </div>
+                    <div class="benefit-card glass">
+                        <div class="icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="url(#b2)" stroke-width="2">
+                                <path d="M12 2L2 7L12 12L22 7L12 2Z" />
+                                <path d="M2 17L12 22L22 17" />
+                                <path d="M2 12L12 17L22 12" />
+                                <defs>
+                                    <linearGradient id="b2" x1="2" y1="2" x2="22" y2="22">
+                                        <stop stop-color="#8b5cf6" />
+                                        <stop offset="1" stop-color="#06b6d4" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3>مربوط بالمخزون</h3>
+                        <p>تزامن لحظي مع نظام الكاشير. الذكاء الاصطناعي يعرف شو متوفر، المقاسات، والألوان.</p>
+                    </div>
+                    <div class="benefit-card glass">
+                        <div class="icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="url(#b3)" stroke-width="2">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                                <defs>
+                                    <linearGradient id="b3" x1="3" y1="3" x2="21" y2="21">
+                                        <stop stop-color="#06b6d4" />
+                                        <stop offset="1" stop-color="#3b82f6" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3>محادثات طبيعية</h3>
+                        <p>يحكي عربي وإنجليزي بطلاقة. صوته بشري، مش روبوت.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-it-works">
+            <div class="container">
+                <div class="section-header center-text">
+                    <h2>كيف يعمل</h2>
+                </div>
+                <div class="steps-grid">
+                    <div class="step-card glass">
+                        <div class="step-number">1</div>
+                        <h4>اربط قنواتك</h4>
+                        <p>اربط حسابات واتساب بيزنس، إنستغرام، وماسنجر.</p>
+                    </div>
+                    <div class="step-card glass">
+                        <div class="step-number">2</div>
+                        <h4>درّب وكيلك</h4>
+                        <p>ارفع كتالوج منتجاتك وخصص شخصية الردود.</p>
+                    </div>
+                    <div class="step-card glass">
+                        <div class="step-number">3</div>
+                        <h4>خليه يبيع</h4>
+                        <p>وكيلك يبدأ يرد على الزبائن، يوصي بالمنتجات، وياخذ الطلبات.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-box glass">
+                    <h2>جاهز تأتمت مبيعاتك؟</h2>
+                    <p>ابدأ تجربتك المجانية وشوف كيف الذكاء الاصطناعي بيحول شغلك.</p>
+                    <div class="cta-buttons">
+                        <a href="contact-ar.html" class="btn-primary btn-lg glow">ابدأ تجربة مجانية</a>
+                        <a href="pricing-ar.html" class="btn-secondary btn-lg">شوف الأسعار</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer glass">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" fill="url(#lg2)" />
+                                <defs>
+                                    <linearGradient id="lg2" x1="3" y1="2" x2="21" y2="22">
+                                        <stop stop-color="#3b82f6" />
+                                        <stop offset="1" stop-color="#8b5cf6" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <span>أوتوفلو</span>
+                    </div>
+                    <p>وكلاء مبيعات بالذكاء الاصطناعي للأعمال الحديثة.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>المنتج</h4>
+                    <a href="automation-ar.html">الأتمتة الذكية</a>
+                    <a href="unified-inbox-ar.html">صندوق الوارد</a>
+                    <a href="insights-ar.html">التحليلات</a>
+                </div>
+                <div class="footer-links">
+                    <h4>الشركة</h4>
+                    <a href="solutions-ar.html">الحلول</a>
+                    <a href="agencies-ar.html">للوكالات</a>
+                    <a href="contact-ar.html">تواصل معنا</a>
+                </div>
+                <div class="footer-links">
+                    <h4>تواصل</h4>
+                    <a href="mailto:hello@autoflow.ai">hello@autoflow.ai</a>
+                    <a href="#">عمّان، الأردن 🇯🇴</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 أوتوفلو. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <style>
+        .how-it-works {
+            padding: 80px 0;
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-top: 40px;
+        }
+
+        .step-card {
+            padding: 40px;
+            text-align: center;
+            position: relative;
+        }
+
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 auto 20px;
+        }
+
+        .step-card h4 {
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+        }
+
+        .step-card p {
+            color: var(--text-secondary);
+        }
+
+        @media (max-width: 768px) {
+            .steps-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+
+</html>

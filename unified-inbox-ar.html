@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صندوق الوارد الموحد - أوتوفلو</title>
+    <meta name="description" content="كل محادثات واتساب وإنستغرام وماسنجر في مكان واحد.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="aurora-bg">
+        <div class="aurora-blob b1"></div>
+        <div class="aurora-blob b2"></div>
+        <div class="aurora-blob b3"></div>
+    </div>
+    <canvas id="flow-canvas"></canvas>
+
+    <nav class="navbar glass">
+        <div class="logo">
+            <div class="logo-icon">
+                <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" fill="url(#lg)" />
+                    <defs>
+                        <linearGradient id="lg" x1="3" y1="2" x2="21" y2="22">
+                            <stop stop-color="#3b82f6" />
+                            <stop offset="1" stop-color="#8b5cf6" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <span>أوتوفلو</span>
+        </div>
+        <div class="nav-links">
+            <a href="products-ar.html" class="active">المنتجات</a>
+            <a href="solutions-ar.html">الحلول</a>
+            <a href="pricing-ar.html">الأسعار</a>
+            <a href="agencies-ar.html">للوكالات</a>
+        </div>
+        <div class="nav-cta">
+            <a href="unified-inbox.html" class="lang-switch">English</a>
+            <a href="contact-ar.html" class="btn-primary glow">ابدأ الآن</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-hero center-text">
+            <div class="container">
+                <div class="badge">صندوق الوارد الموحد</div>
+                <h1>كل قنواتك، <span class="gradient-text">مكان واحد</span></h1>
+                <p class="lead">واتساب، إنستغرام، وفيسبوك — كل محادثاتك في لوحة تحكم واحدة جميلة.</p>
+            </div>
+        </section>
+
+        <section class="channels-list">
+            <div class="container">
+                <div class="channels-grid">
+                    <div class="channel-card glass">
+                        <div class="icon" style="color: #25D366;">📱</div>
+                        <h3>واتساب بيزنس</h3>
+                        <p>اربط API الرسمي ورد على الزبائن فوراً.</p>
+                    </div>
+                    <div class="channel-card glass">
+                        <div class="icon" style="color: #E4405F;">📸</div>
+                        <h3>رسائل إنستغرام</h3>
+                        <p>لا تفوّت أي رسالة. كل DMs توصل هنا.</p>
+                    </div>
+                    <div class="channel-card glass">
+                        <div class="icon" style="color: #0084FF;">💬</div>
+                        <h3>فيسبوك ماسنجر</h3>
+                        <p>دير كل محادثات صفحتك من مكان واحد.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="inbox-features">
+            <div class="container">
+                <div class="section-header center-text">
+                    <h2>مصمم للفرق</h2>
+                </div>
+                <div class="grid-3">
+                    <div class="feature-card glass">
+                        <h3>👥 تعيين الفريق</h3>
+                        <p>عيّن المحادثات لأعضاء الفريق. تابع مين يعالج شو.</p>
+                    </div>
+                    <div class="feature-card glass">
+                        <h3>🏷️ علامات وتصنيفات</h3>
+                        <p>نظّم بعلامات مخصصة. فلتر حسب الحالة، الأولوية، أو الموضوع.</p>
+                    </div>
+                    <div class="feature-card glass">
+                        <h3>🔔 إشعارات ذكية</h3>
+                        <p>تنبيهات لعملاء VIP أو الرسائل العاجلة.</p>
+                    </div>
+                    <div class="feature-card glass">
+                        <h3>📊 تحليلات</h3>
+                        <p>وقت الرد، معدلات الحل، وأداء الفريق.</p>
+                    </div>
+                    <div class="feature-card glass">
+                        <h3>⚡ ردود سريعة</h3>
+                        <p>وفّر وقت مع قوالب جاهزة للأسئلة الشائعة.</p>
+                    </div>
+                    <div class="feature-card glass">
+                        <h3>🔍 بحث</h3>
+                        <p>بحث نصي كامل عبر كل المحادثات والعملاء.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-box glass">
+                    <h2>جاهز توحّد صندوق بريدك؟</h2>
+                    <p>ابدأ تجربتك المجانية وشوف كل رسائلك في مكان واحد.</p>
+                    <a href="contact-ar.html" class="btn-primary glow">ابدأ تجربة مجانية ←</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer glass">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" fill="url(#lg2)" />
+                                <defs>
+                                    <linearGradient id="lg2" x1="3" y1="2" x2="21" y2="22">
+                                        <stop stop-color="#3b82f6" />
+                                        <stop offset="1" stop-color="#8b5cf6" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <span>أوتوفلو</span>
+                    </div>
+                    <p>وكلاء مبيعات بالذكاء الاصطناعي للأعمال الحديثة.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>المنتج</h4>
+                    <a href="automation-ar.html">الأتمتة الذكية</a>
+                    <a href="unified-inbox-ar.html">صندوق الوارد</a>
+                    <a href="insights-ar.html">التحليلات</a>
+                </div>
+                <div class="footer-links">
+                    <h4>الشركة</h4>
+                    <a href="solutions-ar.html">الحلول</a>
+                    <a href="agencies-ar.html">للوكالات</a>
+                    <a href="contact-ar.html">تواصل معنا</a>
+                </div>
+                <div class="footer-links">
+                    <h4>تواصل</h4>
+                    <a href="mailto:hello@autoflow.ai">hello@autoflow.ai</a>
+                    <a href="#">عمّان، الأردن 🇯🇴</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 أوتوفلو. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <style>
+        .channels-list {
+            padding: 40px 0 60px;
+        }
+
+        .channels-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .channel-card {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .channel-card .icon {
+            font-size: 3rem;
+            margin-bottom: 16px;
+        }
+
+        .channel-card h3 {
+            margin-bottom: 12px;
+        }
+
+        .channel-card p {
+            color: var(--text-secondary);
+        }
+
+        .inbox-features {
+            padding: 60px 0 80px;
+        }
+
+        .inbox-features .feature-card {
+            padding: 30px;
+        }
+
+        .inbox-features .feature-card h3 {
+            margin-bottom: 12px;
+        }
+
+        .inbox-features .feature-card p {
+            color: var(--text-secondary);
+        }
+
+        @media (max-width: 768px) {
+            .channels-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+
+</html>

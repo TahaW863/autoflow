@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unified Inbox - Autoflow</title>
+    <meta name="description" content="All your WhatsApp, Instagram, and Messenger conversations in one place.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="aurora-bg">
+        <div class="aurora-blob b1"></div>
+        <div class="aurora-blob b2"></div>
+        <div class="aurora-blob b3"></div>
+    </div>
+    <canvas id="flow-canvas"></canvas>
+
+    <nav class="navbar glass">
+        <div class="logo">
+            <div class="logo-icon">
+                <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" fill="url(#lg)" />
+                    <defs>
+                        <linearGradient id="lg" x1="3" y1="2" x2="21" y2="22">
+                            <stop stop-color="#3b82f6" />
+                            <stop offset="1" stop-color="#8b5cf6" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <span>Autoflow</span>
+        </div>
+        <div class="nav-links">
+            <a href="products.html" class="active">Products</a>
+            <a href="solutions.html">Solutions</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="agencies.html">Agencies</a>
+        </div>
+        <div class="nav-cta">
+            <a href="unified-inbox-ar.html" class="lang-switch">عربي</a>
+            <a href="contact.html" class="btn-primary glow">Get Started</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-hero center-text">
+            <div class="container">
+                <div class="badge">Unified Inbox</div>
+                <h1>All Your Channels, <span class="gradient-text">One Place</span></h1>
+                <p class="lead">WhatsApp, Instagram, and Facebook — all your conversations in a single beautiful
+                    dashboard.</p>
+            </div>
+        </section>
+
+        <section class="channels-list">
+            <div class="container">
+                <div class="channels-grid">
+                    <div class="channel-card glass">
+                        <div class="icon" style="color: #25D366;">📱</div>
+                        <h3>WhatsApp Business</h3>
+                        <p>Connect the official API and respond to customers instantly.</p>
+                    </div>
+                    <div class="channel-card glass">
+                        <div class="icon" style="color: #E4405F;">📸</div>
+                        <h3>Instagram DM</h3>
+                        <p>Never miss a message. All DMs arrive here.</p>
+                    </div>
+                    <div class="channel-card glass">
+                        <div class="icon" style="color: #0084FF;">💬</div>
+                        <h3>Facebook Messenger</h3>
+                        <p>Manage all your page conversations from one place.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="inbox-features">
+            <div class="container">
+                <div class="section-header center-text">
+                    <h2>Built for Teams</h2>
+                </div>
+                <div class="grid-3">
+                    <div class="feature-card glass">
+                        <h3>👥 Team Assignment</h3>
+                        <p>Assign conversations to team members. Track who's handling what.</p>
+                    </div>
+                    <div class="feature-card glass">
+                        <h3>🏷️ Tags & Labels</h3>
+                        <p>Organize with custom tags. Filter by status, priority, or topic.</p>
+                    </div>
+                    <div class="feature-card glass">
+                        <h3>🔔 Smart Notifications</h3>
+                        <p>Get alerted for VIP customers or urgent messages.</p>
+                    </div>
+                    <div class="feature-card glass">
+                        <h3>📊 Analytics</h3>
+                        <p>Response times, resolution rates, and team performance.</p>
+                    </div>
+                    <div class="feature-card glass">
+                        <h3>⚡ Quick Replies</h3>
+                        <p>Save time with templated responses for common questions.</p>
+                    </div>
+                    <div class="feature-card glass">
+                        <h3>🔍 Search</h3>
+                        <p>Full-text search across all conversations and customers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-box glass">
+                    <h2>Ready to Unify Your Inbox?</h2>
+                    <p>Start your free trial and see all your messages in one place.</p>
+                    <a href="contact.html" class="btn-primary glow">Start Free Trial →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer glass">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" fill="url(#lg2)" />
+                                <defs>
+                                    <linearGradient id="lg2" x1="3" y1="2" x2="21" y2="22">
+                                        <stop stop-color="#3b82f6" />
+                                        <stop offset="1" stop-color="#8b5cf6" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <span>Autoflow</span>
+                    </div>
+                    <p>AI-powered sales agents for the modern business.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <a href="automation.html">AI Automation</a>
+                    <a href="unified-inbox.html">Unified Inbox</a>
+                    <a href="insights.html">Smart Insights</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <a href="solutions.html">Solutions</a>
+                    <a href="agencies.html">For Agencies</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <a href="mailto:hello@autoflow.ai">hello@autoflow.ai</a>
+                    <a href="#">Amman, Jordan 🇯🇴</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Autoflow. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <style>
+        .channels-list {
+            padding: 40px 0 60px;
+        }
+
+        .channels-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .channel-card {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .channel-card .icon {
+            font-size: 3rem;
+            margin-bottom: 16px;
+        }
+
+        .channel-card h3 {
+            margin-bottom: 12px;
+        }
+
+        .channel-card p {
+            color: var(--text-secondary);
+        }
+
+        .inbox-features {
+            padding: 60px 0 80px;
+        }
+
+        .inbox-features .feature-card {
+            padding: 30px;
+        }
+
+        .inbox-features .feature-card h3 {
+            margin-bottom: 12px;
+        }
+
+        .inbox-features .feature-card p {
+            color: var(--text-secondary);
+        }
+
+        @media (max-width: 768px) {
+            .channels-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+
+</html>

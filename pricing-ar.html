@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأسعار - أوتوفلو</title>
+    <meta name="description" content="خطط أسعار بسيطة وشفافة. ابدأ مجاناً وتوسع حسب نموك.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="aurora-bg">
+        <div class="aurora-blob b1"></div>
+        <div class="aurora-blob b2"></div>
+        <div class="aurora-blob b3"></div>
+    </div>
+    <canvas id="flow-canvas"></canvas>
+
+    <nav class="navbar glass">
+        <div class="logo">
+            <div class="logo-icon">
+                <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" fill="url(#lg)" />
+                    <defs>
+                        <linearGradient id="lg" x1="3" y1="2" x2="21" y2="22">
+                            <stop stop-color="#3b82f6" />
+                            <stop offset="1" stop-color="#8b5cf6" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <span>أوتوفلو</span>
+        </div>
+        <div class="nav-links">
+            <a href="products-ar.html">المنتجات</a>
+            <a href="solutions-ar.html">الحلول</a>
+            <a href="pricing-ar.html" class="active">الأسعار</a>
+            <a href="agencies-ar.html">للوكالات</a>
+        </div>
+        <div class="nav-cta">
+            <a href="pricing.html" class="lang-switch">English</a>
+            <a href="contact-ar.html" class="btn-primary glow">ابدأ الآن</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-hero center-text">
+            <div class="container">
+                <div class="badge">الأسعار</div>
+                <h1>خطط بسيطة، <span class="gradient-text">نتائج كبيرة</span></h1>
+                <p class="lead">اختر الخطة المناسبة لنمو عملك. لا رسوم خفية، إلغاء في أي وقت.</p>
+            </div>
+        </section>
+
+        <section class="pricing-section">
+            <div class="container">
+                <div class="pricing-grid">
+                    <div class="pricing-card glass">
+                        <div class="pricing-name">مبتدئ</div>
+                        <div class="pricing-price">$49<span>/شهر</span></div>
+                        <div class="pricing-desc">مثالي للشركات الصغيرة المبتدئة</div>
+                        <ul class="pricing-features">
+                            <li>رقم واتساب واحد</li>
+                            <li>500 محادثة AI/شهر</li>
+                            <li>ميزات CRM أساسية</li>
+                            <li>دعم بالبريد الإلكتروني</li>
+                            <li>عضو فريق واحد</li>
+                        </ul>
+                        <a href="contact-ar.html" class="btn-secondary"
+                            style="width: 100%; justify-content: center;">ابدأ الآن</a>
+                    </div>
+
+                    <div class="pricing-card glass featured">
+                        <div class="pricing-badge">الأكثر شعبية</div>
+                        <div class="pricing-name">نمو</div>
+                        <div class="pricing-price">$149<span>/شهر</span></div>
+                        <div class="pricing-desc">للشركات النامية التي تحتاج قوة أكبر</div>
+                        <ul class="pricing-features">
+                            <li>3 قنوات (واتساب، إنستا، ماسنجر)</li>
+                            <li>محادثات AI غير محدودة</li>
+                            <li>CRM كامل + تقييم العملاء</li>
+                            <li>دعم أولوية</li>
+                            <li>5 أعضاء فريق</li>
+                            <li>ربط مع نظام الكاشير</li>
+                        </ul>
+                        <a href="contact-ar.html" class="btn-primary glow"
+                            style="width: 100%; justify-content: center;">ابدأ تجربة مجانية</a>
+                    </div>
+
+                    <div class="pricing-card glass">
+                        <div class="pricing-name">مؤسسات</div>
+                        <div class="pricing-price">مخصص</div>
+                        <div class="pricing-desc">للفرق الكبيرة باحتياجات خاصة</div>
+                        <ul class="pricing-features">
+                            <li>قنوات غير محدودة</li>
+                            <li>محادثات غير محدودة</li>
+                            <li>تدريب AI مخصص</li>
+                            <li>مدير حساب مخصص</li>
+                            <li>أعضاء فريق غير محدودين</li>
+                            <li>خيار White-label</li>
+                            <li>ضمان SLA</li>
+                        </ul>
+                        <a href="contact-ar.html" class="btn-secondary"
+                            style="width: 100%; justify-content: center;">تواصل مع المبيعات</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-box glass">
+                    <h2>مش متأكد أي خطة؟</h2>
+                    <p>ابدأ بتجربة مجانية لمدة 14 يوم. بدون بطاقة ائتمان.</p>
+                    <a href="contact-ar.html" class="btn-primary glow">ابدأ تجربة مجانية ←</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer glass">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" fill="url(#lg2)" />
+                                <defs>
+                                    <linearGradient id="lg2" x1="3" y1="2" x2="21" y2="22">
+                                        <stop stop-color="#3b82f6" />
+                                        <stop offset="1" stop-color="#8b5cf6" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <span>أوتوفلو</span>
+                    </div>
+                    <p>وكلاء مبيعات بالذكاء الاصطناعي للأعمال الحديثة.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>المنتج</h4>
+                    <a href="automation-ar.html">الأتمتة الذكية</a>
+                    <a href="unified-inbox-ar.html">صندوق الوارد</a>
+                    <a href="insights-ar.html">التحليلات</a>
+                </div>
+                <div class="footer-links">
+                    <h4>الشركة</h4>
+                    <a href="solutions-ar.html">الحلول</a>
+                    <a href="agencies-ar.html">للوكالات</a>
+                    <a href="contact-ar.html">تواصل معنا</a>
+                </div>
+                <div class="footer-links">
+                    <h4>تواصل</h4>
+                    <a href="mailto:hello@autoflow.ai">hello@autoflow.ai</a>
+                    <a href="#">عمّان، الأردن 🇯🇴</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 أوتوفلو. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <style>
+        .pricing-section {
+            padding: 40px 0 80px;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            align-items: start;
+        }
+
+        .pricing-card {
+            padding: 40px;
+            text-align: center;
+            position: relative;
+        }
+
+        .pricing-card.featured {
+            border: 2px solid var(--primary);
+            transform: scale(1.05);
+        }
+
+        .pricing-badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .pricing-name {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .pricing-price {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 8px;
+        }
+
+        .pricing-price span {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        .pricing-desc {
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+        }
+
+        .pricing-features {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 24px;
+            text-align: right;
+        }
+
+        .pricing-features li {
+            padding: 8px 0;
+            border-bottom: 1px solid var(--glass-border);
+            position: relative;
+            padding-right: 24px;
+        }
+
+        .pricing-features li::before {
+            content: "✓";
+            position: absolute;
+            right: 0;
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        @media (max-width: 900px) {
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .pricing-card.featured {
+                transform: none;
+            }
+        }
+    </style>
+</body>
+
+</html>

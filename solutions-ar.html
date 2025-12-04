@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الحلول - أوتوفلو</title>
+    <meta name="description" content="حلول أتمتة المبيعات بالذكاء الاصطناعي للمتاجر والمطاعم والخدمات.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="aurora-bg">
+        <div class="aurora-blob b1"></div>
+        <div class="aurora-blob b2"></div>
+        <div class="aurora-blob b3"></div>
+    </div>
+    <canvas id="flow-canvas"></canvas>
+
+    <nav class="navbar glass">
+        <div class="logo">
+            <div class="logo-icon">
+                <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" fill="url(#lg)" />
+                    <defs>
+                        <linearGradient id="lg" x1="3" y1="2" x2="21" y2="22">
+                            <stop stop-color="#3b82f6" />
+                            <stop offset="1" stop-color="#8b5cf6" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <span>أوتوفلو</span>
+        </div>
+        <div class="nav-links">
+            <a href="products-ar.html">المنتجات</a>
+            <a href="solutions-ar.html" class="active">الحلول</a>
+            <a href="pricing-ar.html">الأسعار</a>
+            <a href="agencies-ar.html">للوكالات</a>
+        </div>
+        <div class="nav-cta">
+            <a href="solutions.html" class="lang-switch">English</a>
+            <a href="contact-ar.html" class="btn-primary glow">ابدأ الآن</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-hero center-text">
+            <div class="container">
+                <div class="badge">الحلول</div>
+                <h1>مصمم لكل <span class="gradient-text">أنواع الأعمال</span></h1>
+                <p class="lead">سواء كنت متجر أزياء، كافيه مزدحم، أو صالون تجميل — أوتوفلو يتكيف مع طريقة شغلك.</p>
+            </div>
+        </section>
+
+        <section class="solutions-grid">
+            <div class="container">
+                <div class="grid-3">
+                    <div class="solution-card glass">
+                        <div class="icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="url(#s1)" stroke-width="2">
+                                <path
+                                    d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6Z" />
+                                <path d="M3 6H21" />
+                                <path
+                                    d="M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10" />
+                                <defs>
+                                    <linearGradient id="s1" x1="3" y1="2" x2="21" y2="22">
+                                        <stop stop-color="#3b82f6" />
+                                        <stop offset="1" stop-color="#8b5cf6" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3>المتاجر الإلكترونية والتجزئة</h3>
+                        <p>جاوب على أسئلة المنتجات، شيك المقاسات، وعالج الطلبات — كله أوتوماتيكي عبر واتساب وإنستغرام.
+                        </p>
+                        <ul class="check-list">
+                            <li>مزامنة مخزون لحظية</li>
+                            <li>توصيات المقاس والألوان</li>
+                            <li>تحديثات حالة الطلب</li>
+                            <li>إنشاء روابط دفع</li>
+                        </ul>
+                    </div>
+
+                    <div class="solution-card glass">
+                        <div class="icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="url(#s2)" stroke-width="2">
+                                <path
+                                    d="M18 8H19C20.0609 8 21.0783 8.42143 21.8284 9.17157C22.5786 9.92172 23 10.9391 23 12C23 13.0609 22.5786 14.0783 21.8284 14.8284C21.0783 15.5786 20.0609 16 19 16H18" />
+                                <path
+                                    d="M2 8H18V17C18 18.0609 17.5786 19.0783 16.8284 19.8284C16.0783 20.5786 15.0609 21 14 21H6C4.93913 21 3.92172 20.5786 3.17157 19.8284C2.42143 19.0783 2 18.0609 2 17V8Z" />
+                                <path d="M6 1V4" />
+                                <path d="M10 1V4" />
+                                <path d="M14 1V4" />
+                                <defs>
+                                    <linearGradient id="s2" x1="2" y1="1" x2="23" y2="21">
+                                        <stop stop-color="#8b5cf6" />
+                                        <stop offset="1" stop-color="#06b6d4" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3>المطاعم والكافيهات</h3>
+                        <p>استقبل الحجوزات، طلبات الطعام، واستفسارات التوصيل عبر رسائل إنستغرام وماسنجر.</p>
+                        <ul class="check-list">
+                            <li>تصفح المنيو في الشات</li>
+                            <li>حجز طاولات</li>
+                            <li>معالجة طلبات التوصيل</li>
+                            <li>التعامل مع الطلبات الخاصة</li>
+                        </ul>
+                    </div>
+
+                    <div class="solution-card glass">
+                        <div class="icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="url(#s3)" stroke-width="2">
+                                <path
+                                    d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path
+                                    d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13" />
+                                <path
+                                    d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.7122 8.75608 18.1676 9.45768C17.623 10.1593 16.8604 10.6597 16 10.88" />
+                                <defs>
+                                    <linearGradient id="s3" x1="1" y1="3" x2="23" y2="21">
+                                        <stop stop-color="#06b6d4" />
+                                        <stop offset="1" stop-color="#3b82f6" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3>الخدمات والعيادات</h3>
+                        <p>صالونات، عيادات، جيم — أتمتة حجز المواعيد والرد على الأسئلة المتكررة بدون موظفين زيادة.</p>
+                        <ul class="check-list">
+                            <li>جدولة مواعيد ذكية</li>
+                            <li>استفسارات أسعار الخدمات</li>
+                            <li>التحقق من التوفر</li>
+                            <li>تنبيهات المواعيد</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-box glass">
+                    <h2>مش شايف مجالك؟</h2>
+                    <p>أوتوفلو قابل للتخصيص بالكامل. احكيلنا عن شغلك وبنبنيلك الوكيل المثالي.</p>
+                    <a href="contact-ar.html" class="btn-primary glow">تحدث معنا ←</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer glass">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" fill="url(#lg2)" />
+                                <defs>
+                                    <linearGradient id="lg2" x1="3" y1="2" x2="21" y2="22">
+                                        <stop stop-color="#3b82f6" />
+                                        <stop offset="1" stop-color="#8b5cf6" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <span>أوتوفلو</span>
+                    </div>
+                    <p>وكلاء مبيعات بالذكاء الاصطناعي للأعمال الحديثة.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>المنتج</h4>
+                    <a href="automation-ar.html">الأتمتة الذكية</a>
+                    <a href="unified-inbox-ar.html">صندوق الوارد</a>
+                    <a href="insights-ar.html">التحليلات</a>
+                </div>
+                <div class="footer-links">
+                    <h4>الشركة</h4>
+                    <a href="solutions-ar.html">الحلول</a>
+                    <a href="agencies-ar.html">للوكالات</a>
+                    <a href="contact-ar.html">تواصل معنا</a>
+                </div>
+                <div class="footer-links">
+                    <h4>تواصل</h4>
+                    <a href="mailto:hello@autoflow.ai">hello@autoflow.ai</a>
+                    <a href="#">عمّان، الأردن 🇯🇴</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 أوتوفلو. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <style>
+        .solution-card {
+            padding: 40px;
+        }
+
+        .solution-card h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 16px 0 12px;
+        }
+
+        .solution-card>p {
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+        }
+
+        .solutions-grid {
+            padding: 40px 0 80px;
+        }
+    </style>
+</body>
+
+</html>

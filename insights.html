@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Insights - Autoflow</title>
+    <meta name="description"
+        content="Auto-built customer profiles, lead scoring, and real-time analytics to grow your business.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="aurora-bg">
+        <div class="aurora-blob b1"></div>
+        <div class="aurora-blob b2"></div>
+        <div class="aurora-blob b3"></div>
+    </div>
+    <canvas id="flow-canvas"></canvas>
+
+    <nav class="navbar glass">
+        <div class="logo">
+            <div class="logo-icon">
+                <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" fill="url(#lg)" />
+                    <defs>
+                        <linearGradient id="lg" x1="3" y1="2" x2="21" y2="22">
+                            <stop stop-color="#3b82f6" />
+                            <stop offset="1" stop-color="#8b5cf6" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <span>Autoflow</span>
+        </div>
+        <div class="nav-links">
+            <a href="products.html" class="active">Products</a>
+            <a href="solutions.html">Solutions</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="agencies.html">Agencies</a>
+        </div>
+        <div class="nav-cta">
+            <a href="insights-ar.html" class="lang-switch">عربي</a>
+            <a href="contact.html" class="btn-primary glow">Get Started</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-hero center-text">
+            <div class="container">
+                <div class="badge">Smart Insights</div>
+                <h1>Know Your Customers <span class="gradient-text">Better</span></h1>
+                <p class="lead">Auto-built profiles, intelligent lead scoring, and actionable analytics.</p>
+            </div>
+        </section>
+
+        <section class="insights-features">
+            <div class="container">
+                <div class="grid-3">
+                    <div class="insight-card glass">
+                        <div class="insight-icon">📇</div>
+                        <h3>Auto CRM</h3>
+                        <p>Customer profiles built automatically from conversations. Name, preferences, purchase history
+                            — all captured.</p>
+                    </div>
+                    <div class="insight-card glass">
+                        <div class="insight-icon">⭐</div>
+                        <h3>Lead Scoring</h3>
+                        <p>AI ranks leads by likelihood to buy. Focus on the hottest prospects first.</p>
+                    </div>
+                    <div class="insight-card glass">
+                        <div class="insight-icon">📊</div>
+                        <h3>Conversation Analytics</h3>
+                        <p>Response times, resolution rates, popular products. Know what's working.</p>
+                    </div>
+                    <div class="insight-card glass">
+                        <div class="insight-icon">💰</div>
+                        <h3>Revenue Tracking</h3>
+                        <p>Track sales from chat to completion. See your ROI in real-time.</p>
+                    </div>
+                    <div class="insight-card glass">
+                        <div class="insight-icon">📈</div>
+                        <h3>Growth Trends</h3>
+                        <p>Weekly and monthly reports on customer behavior and sales patterns.</p>
+                    </div>
+                    <div class="insight-card glass">
+                        <div class="insight-icon">🎯</div>
+                        <h3>Customer Segments</h3>
+                        <p>Group customers by behavior, spending, or preferences for targeted campaigns.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-box glass">
+                    <h2>Ready for Smarter Insights?</h2>
+                    <p>Start your free trial and unlock the power of AI-driven analytics.</p>
+                    <a href="contact.html" class="btn-primary glow">Start Free Trial →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer glass">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" fill="url(#lg2)" />
+                                <defs>
+                                    <linearGradient id="lg2" x1="3" y1="2" x2="21" y2="22">
+                                        <stop stop-color="#3b82f6" />
+                                        <stop offset="1" stop-color="#8b5cf6" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <span>Autoflow</span>
+                    </div>
+                    <p>AI-powered sales agents for the modern business.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <a href="automation.html">AI Automation</a>
+                    <a href="unified-inbox.html">Unified Inbox</a>
+                    <a href="insights.html">Smart Insights</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <a href="solutions.html">Solutions</a>
+                    <a href="agencies.html">For Agencies</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <a href="mailto:hello@autoflow.ai">hello@autoflow.ai</a>
+                    <a href="#">Amman, Jordan 🇯🇴</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Autoflow. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <style>
+        .insights-features {
+            padding: 40px 0 80px;
+        }
+
+        .insight-card {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .insight-icon {
+            font-size: 3rem;
+            margin-bottom: 16px;
+        }
+
+        .insight-card h3 {
+            margin-bottom: 12px;
+        }
+
+        .insight-card p {
+            color: var(--text-secondary);
+        }
+    </style>
+</body>
+
+</html>
