@@ -23,20 +23,9 @@
     <canvas id="flow-canvas"></canvas>
 
     <nav class="navbar glass">
-        <div class="logo">
-            <div class="logo-icon">
-                <svg viewBox="0 0 24 24" fill="none">
-                    <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" fill="url(#lg)" />
-                    <defs>
-                        <linearGradient id="lg" x1="3" y1="2" x2="21" y2="22">
-                            <stop stop-color="#3b82f6" />
-                            <stop offset="1" stop-color="#8b5cf6" />
-                        </linearGradient>
-                    </defs>
-                </svg>
-            </div>
-            <span>Autoflow</span>
-        </div>
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="Autoflow" style="height: 40px; width: auto;">
+        </a>
         <div class="nav-links">
             <a href="products.html" class="active">Products</a>
             <a href="solutions.html">Solutions</a>
@@ -61,18 +50,7 @@
         <section class="products-grid">
             <div class="container">
                 <div class="product-card glass">
-                    <div class="product-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="url(#p1)" stroke-width="2">
-                            <circle cx="12" cy="12" r="10" />
-                            <polyline points="12,6 12,12 16,14" />
-                            <defs>
-                                <linearGradient id="p1" x1="2" y1="2" x2="22" y2="22">
-                                    <stop stop-color="#3b82f6" />
-                                    <stop offset="1" stop-color="#8b5cf6" />
-                                </linearGradient>
-                            </defs>
-                        </svg>
-                    </div>
+                    <div class="product-icon">⏰</div>
                     <h2>AI Automation</h2>
                     <p>Sales agents that work 24/7. They answer questions, recommend products, and close deals
                         automatically.</p>
@@ -86,19 +64,7 @@
                 </div>
 
                 <div class="product-card glass">
-                    <div class="product-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="url(#p2)" stroke-width="2">
-                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
-                            <line x1="8" y1="21" x2="16" y2="21" />
-                            <line x1="12" y1="17" x2="12" y2="21" />
-                            <defs>
-                                <linearGradient id="p2" x1="2" y1="3" x2="22" y2="21">
-                                    <stop stop-color="#8b5cf6" />
-                                    <stop offset="1" stop-color="#06b6d4" />
-                                </linearGradient>
-                            </defs>
-                        </svg>
-                    </div>
+                    <div class="product-icon">📬</div>
                     <h2>Unified Inbox</h2>
                     <p>All your WhatsApp, Instagram, and Messenger conversations in one beautiful dashboard.</p>
                     <ul class="check-list">
@@ -111,19 +77,7 @@
                 </div>
 
                 <div class="product-card glass">
-                    <div class="product-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="url(#p3)" stroke-width="2">
-                            <line x1="12" y1="20" x2="12" y2="10" />
-                            <line x1="18" y1="20" x2="18" y2="4" />
-                            <line x1="6" y1="20" x2="6" y2="16" />
-                            <defs>
-                                <linearGradient id="p3" x1="6" y1="4" x2="18" y2="20">
-                                    <stop stop-color="#06b6d4" />
-                                    <stop offset="1" stop-color="#3b82f6" />
-                                </linearGradient>
-                            </defs>
-                        </svg>
-                    </div>
+                    <div class="product-icon">📊</div>
                     <h2>Smart Insights</h2>
                     <p>Auto-built customer profiles, lead scoring, and real-time analytics to grow your business.</p>
                     <ul class="check-list">
@@ -155,20 +109,9 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <div class="logo">
-                        <div class="logo-icon">
-                            <svg viewBox="0 0 24 24" fill="none">
-                                <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" fill="url(#lg2)" />
-                                <defs>
-                                    <linearGradient id="lg2" x1="3" y1="2" x2="21" y2="22">
-                                        <stop stop-color="#3b82f6" />
-                                        <stop offset="1" stop-color="#8b5cf6" />
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                        </div>
-                        <span>Autoflow</span>
-                    </div>
+                    <a href="index.html" class="logo">
+                        <img src="logo.png" alt="Autoflow" style="height: 36px; width: auto;">
+                    </a>
                     <p>AI-powered sales agents for the modern business.</p>
                 </div>
                 <div class="footer-links">
@@ -213,14 +156,8 @@
         }
 
         .product-icon {
-            width: 80px;
-            height: 80px;
-            margin: 0 auto 24px;
-        }
-
-        .product-icon svg {
-            width: 100%;
-            height: 100%;
+            font-size: 3rem;
+            margin-bottom: 24px;
         }
 
         .product-card h2 {
